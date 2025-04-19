@@ -1,0 +1,24 @@
+import java.util.*;
+class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		int n = sc.nextInt();
+		int val =n;
+		int sum=0, num=0;
+		while(n!=0){
+		    num = n%10;
+		    sum += num;
+		    n = n/10;
+		}
+		int totsum1 =  sum,num1=0;
+		while(val!=0){
+		    num1 = val%10;
+		    sum = sum-num1;
+		    totsum1+= sum ;
+		    val = val/10;
+   
+		}
+		System.out.print(totsum1);
+	}
+}
